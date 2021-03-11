@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Color & Size **</title>
+<style>
+	body {background-color: khaki;}
+	#col1 {color: red;}
+	#col2 {color: #ffffff}
+	#col3 {color: rgb(0%,100%,0%);}
+	#col4 {color: rgb(0,0,0);}
+	
+	#p1 {}
+	/*
+	#p2 {font-size: 16px;}
+	#p3 {font-size: 24px;}
+	#p4 {font-size: 32px;}
+
+	#p2 {font-size: 16pt;}
+	#p3 {font-size: 24pt;}
+	#p4 {font-size: 32pt;}
+	
+	#p2 {font-size: 1.0em;}
+	#p3 {font-size: 1.5em;}
+	#p4 {font-size: 2.0em;}
+	*/
+	#p2 {font-size: 100%;}
+	#p3 {font-size: 150%;}
+	#p4 {font-size: 200%;}
+	
+	p:nth-child(12) { font-size: 16px; color:blue;} /*body의 12번쨰 자식인 p*/
+	p:nth-child(13) { font-size: 16pt; color:blue;}
+	p:nth-child(14) { font-size: 1.0em; color:blue;}
+	p:nth-child(15) { font-size: 100%; color:blue;}
+</style>
+
+
+</head>
+<body>
+<h2>** Color Test **</h2>
+<h3 id="col1">1. 색상 이름</h3>
+<h3 id="col2">2. 16 진수</h3>
+<h3 id="col3">3. RGB (백분율)</h3>
+<h3 id="col4">4. RGB (10진수)</h3>
+
+<h2>** Size Test **</h2>
+<p id=p1>1.기본크기 h3</p>
+<p id=p2>2.px 1픽셀</p>
+<p id=p3>3.pt 1/72inch</p>
+<p id=p4>4.em,%  기본크기에 대한 상대적 크기</p>
+<hr>
+<p>test1. px: pixels</p>
+<p>test1. pt: point</p>
+<p>test1. em: 배수</p>
+<p>test1. %: 백분율</p>
+
+</body>
+</html>

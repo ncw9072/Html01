@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>*** Position 절대위치 상대위치 ***</title>
+<style>
+body > div{
+		width:400px; height:200px;
+		border:3px solid black;
+		left:20px; top:20px;
+		position:relative;
+		overflow: auto;
+		/* scroll은 무조건 스크롤바 생성 auto는 필요할 시 스크롤바 생성 */
+		
+}
+.box {	width:100px; height:100px;
+		position:absolute;}
+		/* absolute/fixed/relative */
+.box:nth-child(1) {
+	left:10px;
+	top:10px;
+	background-color: red;
+	z-index: 100; /* 숫자가 제일 큰것이 가리지 않고 맨 위에 나온다 */
+}
+.box:nth-child(2) {
+	left:50px;
+	top:50px;
+	background-color: yellow;
+	z-index: 50;
+}
+.box:nth-child(3) {
+	left:90px;
+	top:90px;
+	background-color: green;
+	z-index: 10;
+}
+</style>
+</head>
+<body>
+<h2>*** Position(위치 속성) ***</h2>
+<div>
+	<div class="box">111</div>
+	<div class="box">222</div>
+	<div class="box">333</div>
+</div>
+<pre>
+<h2>*** Position의 속성 ***</h2>
+=> left, top, right, bottom
+=> 절대 위치
+	- absolute
+	- 좌표값에 의한 절대위치
+	- 그러나 부모 위치를 기준으로 함
+	- fixed : 부모 위치와 무관 항상 body를 기준으로 함
+=> 상대 위치
+	- 요소를 입력한 순서에 따른 상대위치 지정
+	- relative : 이전 요소의 위치에서 이동
+	- static : 상대위치 좌표
+	
+*** overflow , z-index ***
+=> overflow
+	내부의 요소가 부모의 범위를 벗어날때 요소를 처리하는 방법
+	hidden,scroll,..
+=> z-index
+	요소의 화면표시 순서를 설정
+	숫자값이 클수록 우선수위가 높고 앞쪽에 나타남.
+</pre>
+</body>
+</html>

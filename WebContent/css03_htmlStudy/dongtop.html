@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Top Menu **</title>
+<style>
+   #menu{background-color:Thistle; height:60px; width: 900px; position: absolute; left: 0;top:0;}
+	/*이부분에 백그라운드 컬러 넣는거 너무 좋았습니다 감사합니다*/
+
+   ul{list-style:none; margin:0 auto; width:500px;}
+   ul li {float:left; width:33%; line-height:60px;}
+   ul ul {display:none;}
+   ul li a:hover{color:RosyBrown;}
+   ul li:hover ul{display:table-row-group; background-color:ghostwhite;}
+   ul a {text-decoration:none;
+        font-family:futura-Heavy;
+        font-size:20px; font-weight:bold; color:gray;
+        padding: 5px;}
+   ul li ul li{float:none;}
+   
+ /* nav{background-color:Thistle; height:60px; width:900px; position: absolute; left: 0;top:0;}
+	ul{ list-style:none;} 
+	ul ul {display:none;}
+	ul li a:hover{color:hotpink;}
+	ul li:hover ul{display:table-row-group; background-color:ghostwhite;}
+	nav>ul>li {float:left; margin-left: 150px;}
+	ul a {
+		line-height: 30px;
+		text-decoration: none;
+		font-size: 20px; font-weight: bold; color:gray;
+		padding: 5px;
+	} */
+</style>
+</head>
+<body>
+<div id="menu">
+<ul>
+   <li><a href="main.html" target="section"> [HOME] </a>
+   <li><a> [HTML] </a>
+      <ul>
+         <li><a href="../html01_Basic/fontTest.html" target="section">Font</a>
+         <li><a href="../html01_Basic/mediaTest.html" target="section">Media</a>
+         <li><a href="../html02_tableForm/formEx04_Join.html" target="section">Join</a>
+      </ul>
+   <li><a> [CSS] </a>
+      <ul>
+         <li><a href="../css01/selector02_child.html" target="section">Selector1</a>
+         <li><a href="../css01/selection03_state.html" target="section">Selector2</a>
+         <li><a href="../css02_attribute/attr05_position02.html" target="section">Attribute</a>
+      </ul>
+</ul>
+</div>
+</body>
+</html>
