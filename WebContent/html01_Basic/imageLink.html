@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Image & Link **</title>
+</head>
+<body>
+<font size="7" color="blue">1. Image와 경로</font><p>
+<h1>1.1) 상대경로</h1><!-- 현재폴더 위치에서의 이미지 위치 -->
+<pre>
+=> 현재 화일의 위치로 부터 시작하는 상대 경로
+   ./ 현재위치, ../ 한단계 위의 위치
+</pre>
+<img src="../image/aaabbbb.gif" alt="alt_X_Message">&nbsp;&nbsp;<!-- 이미지오류 시 메시지 -->
+<img src="../image/aaa.gif" title="title_MoucseOver">&nbsp;&nbsp;
+<img src="../image/aaa.gif" width="100" height="100">&nbsp;&nbsp;
+<img src="../image/aaa.gif" width="50" height="100">&nbsp;&nbsp;
+<img alt="abcd" src="../image/aaa.gif" width="100" height="50">
+<hr size="10" align="left" color="hotpink" width="200">
+<h1>1.2) 절대경로</h1><!--    /로 시작 -->
+<img alt="bbb.gif" src="/">
+<pre>
+=> 일반적인 절대경로
+C:\NamCheolWoo\MyWork\Html01\WebContent\image
+=> 웹 어플리케이션 : 프로젝트 기준 (WebContent는 생략됨)
+</pre>
+<img alt="bbb.gif" src="/Html01/image/bbb.gif" alt="alt_X_Message" title="title_MoucseOver">&nbsp;&nbsp;
+<img alt="ccc.gif" src="/Html01/image/ccc.gif">&nbsp;&nbsp;
+<img alt="ddd.gif" src="/Html01/image/ddd.gif">&nbsp;&nbsp;
+<hr size="5" align="center" color="blue" width="200">
+
+<font size="7" color="blue">2. Image 와 Link</font><p>
+<a href="https://www.naver.com">
+	<img alt="naver" src="/Html01/image/eee.gif" width="100" height="100">
+NAVER
+</a><br>
+<a href="/Html01/html01_Basic/fontTest.html" target=_blank>Font[절대경로]</a>&nbsp;&nbsp;
+<a href="./ulOlTest.html" target=_blank>
+<img src="../image/a5.png" width="100" height="100" >
+ULOL[상대경로]</a><br>
+
+</body>
+</html>

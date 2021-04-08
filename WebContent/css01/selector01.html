@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Selector **</title>
+<style>
+*{color:navy;}
+h2,h3,p{color:red;}
+h2{color:deepSkyblue;}
+input[type="text"] {color:green;}
+input[type="password"] {color:white; background-color: black;}
+
+#iii{color: Orange}
+.ccc1{color: lime}
+.ccc2{font-style: italic;}
+ul li.ccc2{font-size: 20pt; color: hotpink}
+
+</style>
+</head>
+<body>
+<h2>Test1) Selector_ *</h2>
+<p>* => 모든 Tag에 적용 할 때</p>
+
+<h2>Test2) Selector_ Tag</h2>
+<h3>2.1) 기본 Tag</h3>
+<pre>
+   => 단수 : h1
+   => 복수 : h1,h2,p,pre....
+   => 단수 복수에선 id class 관계와 다르게 나중에 온 녀석이 적용됨
+</pre>
+<h3>2.2) Form Tag</h3>
+   <form>
+      text : <input type="text"><br>
+      password: <input type="password"><br>
+   </form>
+<hr>
+<h2>Test3) Selector_ id, class</h2>
+<h4>
+<span id=iii>idTest1</span>
+<span id=iii>idTest2</span>
+<span id=iii>idTest3</span>
+<!-- id도 모두 적용되지만 문법상 맞지 않기에 class로 써야함 (id는 중복불허용)-->
+<br>
+<span class=ccc1>classTest1</span>
+<span class="ccc1 ccc2">classTest2</span>
+<span class="ccc1 ccc2">classTest3</span>
+<ul>
+	<li class="ccc2">사과
+	<li class="ccc2">딸기
+	<li class="ccc2">바나나
+</ul>
+</h4>
+</body>
+</html>

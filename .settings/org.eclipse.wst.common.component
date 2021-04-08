@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
     <wb-module deploy-name="Web03">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="context-root" value="Web03"/>
         <property name="java-output-path" value="/Web03/build/classes"/>
+=======
+    <wb-module deploy-name="Html01">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="Html01"/>
+        <property name="java-output-path" value="/Html01/build/classes"/>
+>>>>>>> refs/remotes/origin/master
     </wb-module>
 </project-modules>

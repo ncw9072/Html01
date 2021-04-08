@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Join Form 만들기 **</title>
+</head>
+<body bgcolor="Lavender">
+<font size=4 color=green>*** Form & Table : 회원가입 작성 [formEx04_Join.html]</font>
+<marquee direction="right" width=600 loop=-1 scrolldelay="10">
+	<img src="../image/x1.gif">
+	<img src="../image/x1.gif">
+	<img src="../image/x1.gif">
+	<img src="../image/x1.gif">
+	<img src="../image/x1.gif">
+</marquee>
+<table border=1 width=600 height=300 color=white bgcolor=skyblue >
+	<caption>*회원가입*</caption>
+	<tr><th colspan="2">모든항목을 입력해야 합니다</th>
+	</tr>
+	
+	<form action="#" method="post">	
+	<tr>
+		<td><label for="iname">이름 : </label></td>
+		<td><input type="text" name=id id=iname style="background-color:PaleTurquoise;"></td>
+	</tr>
+	
+	<tr>
+		<td><label for="ipass">비밀번호 : </label></td>
+		<td><input type="password" name=password id="ipass" style="background-color:PaleTurquoise;"> ※영문 4~8자리미만입력※</td>
+	</tr>
+
+	<tr>
+		<td>성별 : </td>
+		<td><label><input type="radio" name=gender value=m checked>남자</label>
+			<input type="radio" name=gender value=f id=if><label for=if>여자</label>
+		
+		</td>
+	</tr>
+
+	<tr>
+		<td>직업 :</td>
+		<td><select>
+			<option value="기술자">기술자
+			<option value="과학자">과학자
+			<option value="지도자">지도자
+		</select></td>
+	</tr>
+
+	<tr>
+		<td>취미 :</td>
+		<td>
+		<input type="checkbox" name=hobby value="여헹">여행<br>
+		<input type="checkbox" name=hobby value="영화보기">영화보기<br>
+		<input type="checkbox" name=hobby value="드라이브">드라이브<br>
+		<input type="checkbox" name=hobby value="게임">게임<br>
+		<input type="checkbox" name=hobby value="자는것">자는것<br>
+		</td>
+	</tr>
+
+	<tr>
+		<td><label for="my">자기소개</label></td>
+		<td><textarea rows= 10 cols=65  name="자기소개" style="background-color:PaleTurquoise;" placeholder="650자 이내로 기술하시오." maxlength="650"></textarea></td>
+	</tr>
+</table>
+<input type="submit" value= 등록버튼> &nbsp;&nbsp;
+<input type="reset" value=다시입력하기>
+</form>
+</body>
+</html>

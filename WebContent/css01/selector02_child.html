@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** child(자손)과 Descendent(후손) **</title>
+<style>
+	#d1 > h2 {color: red;} /* Child */
+	#d1 div > h2 {color:skyblue;} /*손자*/
+	#d2 h2{color:blue;}			/* Descendent */
+	#d2,h2{color: lime}						/* 합집합 */
+	h2#d3 {color: hotpink} /* 교집합 */
+	
+	li {list-style: none; float: left; padding:30px;}
+	ol li:first-child {border-radius: 15px 0 0 15px;}
+	li:last-child {border-radius: 0 15px 15px 0;}
+	li:nth-child(2n) {background-color: red;} /* n은 0부터 시작 */
+	li:nth-child(2n+1) {background-color: green;} /* 홀수 */
+	li:nth-child(4) {background-color: yellow;}
+	
+</style>
+</head>
+<body>
+<h2 id="d3">** child(자손) **</h2>
+<div id="d1">Div1
+	<h2>Div1의 Child1</h2>
+	<h2>Div1의 Child2</h2>
+	<div>
+		<h2>Div1의 손자1</h2>
+		<h2>Div1의 손자2</h2>
+	</div>
+</div>
+
+<h2>** descendent(후손) **</h2>
+<div id="d2">Div2
+	<h2>Div2의 Child1</h2>
+	<h2>Div2의 Child2</h2>
+	<div>
+		<h2>Div2의 손자1</h2>
+		<h2>Div2의 손자2</h2>
+	</div>
+</div>
+<hr>
+<h2>** Structured Child **</h2>
+<ol type="1">
+	<li>1 째
+	<li>2 째
+	<li>3 째
+	<li>4 째
+	<li>5 째
+	<li>6 째
+	<li>7 째
+</ol>
+</body>
+</html>

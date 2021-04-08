@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Div & Span **</title>
+<style type="text/css">
+/* 스타일 적용대상 Tag 선택 : 선택자 (selector) */
+.ggg {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	float:left;
+	
+}
+.kkk{
+	width:100px;
+	height:100px;
+}
+
+</style>
+
+</head>
+<body>
+<h3>** 1. Div **</h3>
+<pre><h3>
+=> 줄바꿈이 있는 block
+=> 콘텐츠의 영역이나 그룹화를 할때 사용
+=> 배경색은 레이아웃 가로 세로 모두에 적용
+=> 외관 관련 속성은 css(style) 만 적용 됨.
+</h3></pre>
+<div width=100 height=100 bgcolor=yellow>111111</div>
+<div align="left" style="width:200px;height:200px;background-color:green">Green</div>
+<div align="center" style="width:200px;height:200px;background-color:blue">Blue</div>
+<div align="right" style="width:200px;height:200px;background-color:red">Red</div>
+<h3>** 2. Span **</h3>
+<pre><h3>
+=> 줄바꿈이 없는 inLine 영역
+=> 다른 텍스트와 구별하기 위해 사용
+=> 배경색은 글자가 있는곳만 적용
+=> 외관 관련 속성은 <span style="background-color: aqua;">컨텐츠영역</span>만 적용됨.css(style)
+</h3></pre>
+<span style="width:100px;height:100px;background-color:green">Span1</span>
+<span style="width:100px;height:100px;background-color:blue">Span2222</span>
+<span style="width:100px;height:100px;background-color:red">Span33333333</span>
+<!-- span은 컨텐츠만큼만 적용되므로 width height가 의미 없음 -->
+<hr>
+<h3>** 3. Div in Span **</h3>
+<h3>=> span이 div처럼 (block 적용)</h3>
+<span>** Span 3.1
+	<div>Div1 in Span3.1</div>
+	<div>Div2 in Span3.1</div>
+	<div>Div3 in Span3.1</div>
+</span>
+<span>** Span 3.2
+	<div>Div1 in Span3.2</div>
+	<div>Div2 in Span3.2</div>
+	<div>Div3 in Span3.2</div>
+</span>
+<h3>** 4. Span in Div **</h3>
+<div>** div 4.1
+	<span>Span1 in Div4.1</span>
+	<span>Span2 in Div4.1</span>
+	<span>Span3 in Div4.1</span>
+</div>
+<div>** div 4.2
+	<span>Span1 in Div4.2</span>
+	<span>Span2 in Div4.2</span>
+	<span>Span3 in Div4.2</span>
+</div>
+<h3>** 5. Div 를 Table 처럼 사용</h3>
+=> 3*3 Box 만들기
+<div> <!-- table -->
+	<div><!-- <tr> -->
+		<span>월요일</span><span>수요일</span><span>금요일</span>
+	</div>
+	<div>
+		<span>J a v a</span><span>H t m l</span><span>C  s  s</span>
+	</div>
+	<div>
+		<span>J  s  p</span><span>D    B</span><span>JavaScript</span>
+	</div>
+</div>
+<h3>** 6. Div 를 갤러리 처럼 사용</h3>
+<pre>
+=> 1줄에 div를 일정 갯수(3개씩)만큼 출력하고 줄바꿈 하기
+=> float:left
+</pre>
+<div id="ddd1" class="ggg bbb">d1111</div>
+<div id="ddd2" class="ggg">d2222</div>
+<div class="ggg">d3333</div>
+<div class="kkk"></div>
+<div class="ggg">d4444</div>
+<div class="ggg">d5555</div>
+<div class="ggg">d6666</div>
+<div class="kkk"></div>
+<div class="ggg">d7777</div>
+<div class="ggg">d8888</div>
+<div class="ggg">d9999</div>
+</body>
+</html>
