@@ -1,0 +1,26 @@
+body{ background-color: white;}
+
+/*inputTag ErrorMessage*/
+.message{
+	color : red;
+	font-style: italic;
+	font-size: x-small;
+}
+
+/* Link Button */
+.button {
+	width: 150px; height: 70px;	background-color: aqua;
+	border-radius: 20px; border:5px solid skyblue;
+	text-align: center;
+}
+a {text-decoration: none; color:gray;}
+.button > a {color: #FFC0CB; text-decoration: none; line-height: 70px;}
+.button:hover{
+	box-shadow: 5px 5px 10px #FFC0CB;
+	/*그림자 => box, Text
+		   => 오른쪽(h 수평거리: +우측/-좌측)
+		   => 아래(v 수직거리: +아래/-위쪽)
+		   	  흐림도(blur),생상 */
+}
+.button > a:hover {color:gray;}
+.button > a:active {color:red;}
